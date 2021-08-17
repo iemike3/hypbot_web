@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HypBot | 危険！</title>
+</head>
+<style>
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #36393f;
+    }
+    header {
+        background-color: rgba(61, 61, 61,0.5);
+        color: #ffffff;
+        width: calc(100% - 60px);
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: fixed;
+        box-shadow: 0 0 10px #474747;
+    }
+    header h2 {
+        margin: 0;
+        font-weight: 100;
+        float: left;
+    }
+    .header_right {
+        float: right;
+    }
+    .login_button {
+        padding: 5px 7px;
+        border-radius: 5px;
+        background-color: #5f7eaf;
+        transition: all 300ms 0s ease;
+        color: #ffffff;
+        border: none;
+    }
+    .login_button:hover {
+        background-color: #3f5372;
+    }
+    .main {
+        height: calc(100% - 50px);
+        padding-top: 50px;
+    }
+    .main_pic {
+        width: calc(100% - 60px);
+        height: 250px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 30px;
+        background: linear-gradient(-135deg, #e7a55a, #5c6ebd);
+        color: #ffffff;
+    }
+    .main_pic div {
+        padding-top: 80px;
+    }
+    .bot_addbutton {
+        padding: 10px 8px;
+        border-radius: 2px;
+        border: none;
+        background-color: #3bb486;
+        color: #000000;
+        transition: all 300ms 0s ease;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bot_addbutton:hover {
+        background-color: #30906c;
+        color: #000000;
+    }
+    .bot_soukibutton {
+        padding: 10px 8px;
+        border-radius: 2px;
+        border: none;
+        background-color: #8d4141;
+        color: #ffffff;
+        transition: all 300ms 0s ease;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bot_soukibutton:hover {
+        background-color: #d85050;
+        color: #000000;
+    }
+    .func_into {
+        margin: 0 auto;
+        width: 90%;
+        height: 470px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .func_into h2 {
+        font-weight: 100;
+        margin: 0;
+        padding: 0.25em 0.5em;
+        color: #494949;
+        background-color: #ffffff;
+        border-left: solid 4px #7db4e6;
+    }
+    .func_into div {
+        background-color: #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: solid 4px #e7bc77;
+        float: left;
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+    }
+    .func_into div img {
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    footer {
+        padding:0; 
+        margin:0;
+        position: absolute;/*←絶対位置*/
+        bottom: 0;
+        background-color: #3a3a3a;
+        color: #ffffff;
+        box-shadow: 0 0 10px #474747;
+        width: calc(100% - 20px);
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+
+        .func_into {
+            margin: 0 auto;
+            width: 90%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .func_into div {
+            background-color: #ffffff;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-left: solid 4px #e7bc77;
+            float: none;
+            width: 100%;
+        }
+
+        .func_into div img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding:0; 
+            margin:0;
+            margin-top: 550px;
+            background-color: #3a3a3a;
+            color: #ffffff;
+            box-shadow: 0 0 10px #474747;
+            width: calc(100% - 20px);
+            height: 50px;
+            line-height: 50px;      
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 13px;
+        }
+    }
+</style>
+<script>
+
+    function push_soukibutton() {
+        var url_addbutton = "https://discord.com/oauth2/authorize?client_id=877097999464009729&permissions=2147798080&scope=bot";
+        window.open(url_addbutton, '_blank');
+    }
+</script>
+<body>
+    <header>
+        <h2>HypBot</h2>
+        <div class="header_right">
+            <button class="login_button" type="button">ログイン</button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main_pic">
+            <div>
+                <a style="color: #ffffff;">危険を試しますか？</a><br>
+                <button class="bot_soukibutton" type="button" onclick="push_soukibutton();"><b>本当に</b>危険を試す！</button>
+                <!--<button class="bot_detailbutton" type="button">詳細を見る！</button>-->
+            </div>
+        </div>
+    
+        <footer>
+            Copyright © 2021 HypBot All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
