@@ -74,28 +74,28 @@
         border-radius: 2px;
         border: none;
         background-color: #3bb486;
-        color: #ffffff;
+        color: #000000;
         transition: all 300ms 0s ease;
         margin-left: 5px;
         margin-right: 5px;
     }
     .bot_addbutton:hover {
         background-color: #30906c;
-        color: #ffffff;
+        color: #000000;
     }
-    .bot_detailbutton {
+    .bot_soukibutton {
         padding: 10px 8px;
         border-radius: 2px;
         border: none;
-        background-color: #3b8eb4;
+        background-color: rgba(0, 0, 0,0.1);
         color: #000000;
         transition: all 300ms 0s ease;
         margin-left: 5px;
         margin-right: 5px;
     }
-    .bot_detailbutton:hover {
-        background-color: #367fa3;
-        color: #000000;
+    .bot_soukibutton:hover {
+        background-color: rgba(0, 0, 0,0.5);
+        color: #ffffff;
     }
     .func_into {
         margin: 0 auto;
@@ -202,6 +202,7 @@
             <div>
                 <a style="color: #ffffff;">なんとなく作ったBot</a><br>
                 <button class="bot_addbutton" type="button" onclick="push_addbutton();">導入する！</button>
+                <button class="bot_soukibutton" type="button" onclick="push_soukibutton();">危険を試す！</button>
                 <!--<button class="bot_detailbutton" type="button">詳細を見る！</button>-->
             </div>
         </div>
